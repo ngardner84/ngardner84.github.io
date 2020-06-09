@@ -1,3 +1,0 @@
-<html>
-	<h1>Alien Peek</h1>
-</html>
