@@ -7,17 +7,9 @@
 				<h1 id="mainMenu">Alien Peek</h1>
 				<button onclick="showAlien()">Get Peeked On</button>
 			</div>
-			<img src="images/Aliens.jpg" alt="Get peeked on" id="image" style="visibility:hidden">
+			<img src="images/Aliens.jpg" alt="Get peeked on" id="image" style="visibility:hidden;">
 			<script>
-				var temp = document.getElementById("image");
-				if (temp.style.visibility == "hidden")
-				{
-					temp.style.visibility = "visible";
-				}
-				else
-				{
-					temp.style.visibility = "hidden";
-				}
+				document.getElementById("image").style.visibility = "visible";
 			</script>
 		</body>
 	</html>
