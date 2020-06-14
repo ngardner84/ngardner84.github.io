@@ -7,8 +7,19 @@ h1 {
 
 button {
     display: block;
+	transition-duration: 0.4s;
     margin-left: auto;
     margin-right: auto;
+	border: 2px solid #FFFFFF;
+	width: 8%;
+	height: 50px;
+	font-family: 'Teko', serif;
+	font-size: 30px;
+}
+
+button:hover {
+	background-color: #2D862D;
+	color: #000000;
 }
 
 #alien  {
