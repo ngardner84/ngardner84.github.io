@@ -10,9 +10,18 @@
 				<h1 id="mainMenu">Alien Peek</h1>
 				<button onclick="showAlien()">Get Peeked On</button>
 			</div>
-			<img src="images/Aliens.jpg" alt="Get peeked on" id="image" style="visibility:hidden;">
+			<div id="myImage">
+				<img src="images/Aliens.jpg" alt="Get peeked on"">
+			</div>
 			<script>
-				document.getElementById("image").style.visibility = "visible";
+			function showAlien(){
+				var temp = document.getElementById("myImage");
+				if (temp.style.display === "none") {
+					temp.style.display = "block";
+				  } else {
+					temp.style.display = "none";
+				  }
+			}
 			</script>
 		</body>
 	</html>
