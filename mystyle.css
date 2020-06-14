@@ -5,9 +5,17 @@ h1 {
     color: white;
 }
 
+#splash {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     display: block;
-	transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
 	border: 2px solid #FFFFFF;
