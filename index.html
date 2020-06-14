@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <link rel="stylesheet" type="text/css" href="mystyle.css">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 	<html>
 		<head>
 			<script data-ad-client="ca-pub-1940093239409192" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -8,20 +9,20 @@
 		<body>
 			<div id="topPage">
 				<h1 id="mainMenu">Alien Peek</h1>
-				<button onclick="showAlien()">Get Peeked On</button>
+				<button id="button1"onclick="showAlien()">Get Peeked On</button>
 			</div>
 			<div id="myImage">
-				<img src="images/Aliens.jpg" alt="Get peeked on"">
+				<img id="alien" src="images/Aliens.jpg" alt="Get peeked on" style="visibility: hidden;">
 			</div>
 			<script>
-			function showAlien(){
-				var temp = document.getElementById("myImage");
-				if (temp.style.display === "none") {
-					temp.style.display = "block";
-				  } else {
-					temp.style.display = "none";
-				  }
-			}
+				function showAlien() {
+					var temp = document.getElementById("alien");
+					if (temp.style.visibility === "hidden") {
+						temp.style.visibility = "visible";
+					} else {
+						temp.style.visibility = "hidden"
+					}
+				}
 			</script>
 		</body>
 	</html>
